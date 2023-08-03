@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "question": "Who is the main character in Disney's \"Up?\"",
+            "choice1": "Ellie",
+            "choice2": "Russel",
+            "choice3": "Dug",
+            "answer": "Carl Fredricksen"
+        },
+        {
+            "question": "Who is the movie \"Up,\" based on?",
+            "choice1": "Anne Hathaway",
+            "choice2": "Elizabeth Docter",
+            "choice3": "Elizabeth Stallworth-Allen",
+            "answer": "Edith Macefield"
+        },
+        {
+            "question": "What is 2 + 2?",
+            "choice1": "5",
+            "choice2": "Fish",
+            "choice3": "Red",
+            "answer": "4"
+        },{
+            "question": "What is the technical name of our sun?",
+            "choice1": "Antares",
+            "choice2": "Vega",
+            "choice3": "Betelgeuse",
+            "answer": "Sol"
+        },{
+            "question": "What is the name of our Moon?",
+            "choice1": "Lovegood",
+            "choice2": "Europa",
+            "choice3": "Io",
+            "answer": "Luna"
+        },{
+            "question": "What is the biggest planet in our Solar System?",
+            "choice1": "Saturn",
+            "choice2": "Mars",
+            "choice3": "Europa",
+            "answer": "Jupiter"
+        },{
+            "question": "What state is Salt Lake City in?",
+            "choice1": "Idaho",
+            "choice2": "Nevada",
+            "choice3": "Ireland",
+            "answer": "Utah"
+        },{
+            "question": "What does a baby computer call his father?",
+            "choice1": "Dad",
+            "choice2": "Father",
+            "choice3": "Dada",
+            "answer": "Data"
+        },{
+            "question": "After an unsuccessful harvest, why did the farmer decide to try a career in music?",
+            "choice1": "Because he had a ton of sick corn.",
+            "choice2": "Because he had a ton of sick apples.",
+            "choice3": "Because....",
+            "answer": "Because he had a ton of sick beets."
+        },{
+            "question": "What brand of underwear do scientists wear?",
+            "choice1": "Calvin Klein",
+            "choice2": "Fruit of the loom",
+            "choice3": "Uranus",
+            "answer": "Kelvin Klein."
+        }
+    ]
+}

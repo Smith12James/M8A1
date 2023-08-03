@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+        <script src="../lib/jquery-3.7.0.min.js"></script>
+        <script src="../lib/jquery-ui.min.js"></script>
+        <script>
+            var tempArr = [0,1,2,3,4,5,6,7,8,9];
+            var qArr = [];
+            
+            var arrLen = tempArr.length;
+            
+            for (var x = 0; x < arrLen; x++) {
+                var rand = Math.floor(Math.random() * tempArr.length);
+                
+                var temp = tempArr.splice(rand, 1);
+                qArr.push(temp);
+                
+            }
+            
+            $(document).ready(function() {
+               console.log("ready");
+               
+               // connect to json
+               $.getJSON('Qs-and-As.json', function(data) {
+                   console.log(data);
+                   
+                   // loop through each item
+                   $.each(data, function(key, value) {
+                       console.log(value);
+                       
+                       // loop through all index's
+                       $.each(value, function(index, response) {
+                           console.log(index + " " + response.answer);
+                           
+                           var tempNum = qArr.splice(0, 1);
+                           
+                           getElementById("question-" + tempNum).innerHTML(response.question);
+                           
+                       });
+        
+                   });
+                   
+               });
+                
+            });
+            
+        </script>
+    </head>
+    <body>
+        <h2>Terrible Trivia</h2>
+        
+        <div id="accordion">
+            <form>
+                <h3 id="question-0"></h3>
+                <div class="trivia-qs" id="t-0">
+
+                </div>
+
+                <h3 id="question-1"></h3>
+                <div class="trivia-qs" id="t-1">
+
+                </div>
+
+                <h3 id="question-2"></h3>
+                <div class="trivia-qs" id="t-2">
+
+                </div>
+
+                <h3 id="question-3"></h3>
+                <div class="trivia-qs" id="t-3">
+
+                </div>
+
+                <h3 id="question-4"></h3>
+                <div class="trivia-qs" id="t-4">
+
+                </div>
+
+                <h3 id="question-5"></h3>
+                <div class="trivia-qs" id="t-5">
+
+                </div>
+
+                <h3 id="question-6"></h3>
+                <div class="trivia-qs" id="t-6">
+
+                </div>
+
+                <h3 id="question-7"></h3>
+                <div class="trivia-qs" id="t-7">
+
+                </div>
+
+                <h3 id="question-8"></h3>
+                <div class="trivia-qs" id="t-8">
+
+                </div>
+
+                <h3 id="question-9"></h3>
+                <div class="trivia-qs" id="t-9">
+
+                </div>
+            </form>
+        </div>
+        
+        <script>
+            $(document).ready(function() {
+                $(function() {
+                    $('#accordion').accordion();
+                });
+            });
+
+        </script>
+    </body>
+</html>
